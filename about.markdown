@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Mnms
+Samy Samy
 
 
 You can find the source code for Minima at GitHub:
