@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Samy Samy
-
+Bienvenue sur le site web qui va représenter l'activité de Samy.
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
