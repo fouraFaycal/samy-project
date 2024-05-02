@@ -9,7 +9,7 @@ La boxe est un sport de combat qui implique deux adversaires qui se battent à l
 
 ## Les bienfaits de la boxe
 
-La boxe ne se limite pas seulement à l'aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d'améliorer la force, l'endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.
+La boxe ne ne ne se limite pas seulement à l'aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d'améliorer la force, l'endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.
 
 ## Pratiquer la boxe
 
