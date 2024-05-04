@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Accueil
+title: Samy
 ---
 
 # Bienvenue dans le monde de la boxe !

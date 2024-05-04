@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/styl.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <style>
+        /* Add any custom CSS here */
+        body { margin: 0; padding: 0; }
+        #map { height: 400px; }
+    </style>
 </head>
 <body>
     <header>
@@ -35,10 +41,20 @@
 </div>
 
         </div>
+<div id="map" style="width: 100%; height: 400px;"></div>
+    <script src="css/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([49.1434159, 2.4684175], 20.39); // Set initial coordinates 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    </script>
+
     </main>
     
     <footer>
-        <p>&copy;  | Projet de Samy</p>
+        <p>&copy; email-samy@example.com | instagram de samy</p>
     </footer>
 </body>
 </html>

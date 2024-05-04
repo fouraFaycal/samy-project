@@ -19,6 +19,7 @@
 
 title: Projet de Samy
 email: email-samy@example.com
+insta: instagram de samy
 description: >- # this means to ignore newlines until "baseurl:"
   Ecrire une description pour ton site ici pour le referencement. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -26,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: twitterDeSamy
 github_username:  jekyllDeSamy
+google_maps_api_key: YOUR_API_KEY
 
 # Build settings
 theme: minima
