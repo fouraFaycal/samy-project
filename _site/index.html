@@ -32,18 +32,23 @@
 <p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
 
         </div>
-<div id="map" style="width: 100%; height: 400px;"></div>
-    <script src="css/leaflet.js"></script>
 
-    <script>
-        var map = L.map('map').setView([49.1434159, 2.4684175], 13); // Set initial coordinates 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-    </script>
+        <div>
+            <iframe src="https://calendar.app.google/7MUpEq5TSRMfdTM69" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
 
+        <div id="map" style="width: 50%; height: 400px;"></div>
+            <script src="css/leaflet.js"></script>
+            <script>
+                var map = L.map('map').setView([49.1434132, 2.4685717], 15);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                var marker = L.marker([49.1434132, 2.4685717]).addTo(map);
+                marker.bindPopup("<b>Coye la foret</b><br>Activité de Samy.").openPopup();
+            </script>
     </main>
-    
     <footer>
         <p>&copy; email-samy@example.com | instagram de samy</p>
     </footer>
