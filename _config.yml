@@ -27,7 +27,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: twitterDeSamy
 github_username:  jekyllDeSamy
-google_maps_api_key: YOUR_API_KEY
 
 # Build settings
 theme: minima

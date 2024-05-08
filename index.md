@@ -14,3 +14,7 @@ La boxe ne se limite pas seulement à l'aspect physique, elle offre également d
 ## Pratiquer la boxe
 
 Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d'entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !
+
+{% include agenda.html %}
+
+{% include open-street-map.html %}
