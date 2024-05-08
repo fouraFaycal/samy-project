@@ -6,10 +6,27 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+
     <style>
         /* Add any custom CSS here */
-        body { margin: 0; padding: 0; }
+        body { margin: 10; padding: 10; }
         #map { height: 400px; }
+        /* Style du bouton */
+        .scroll-btn {
+            background-color: #4CAF50; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            border: none; /* Pas de bordure */
+            padding: 15px 20px; /* Remplissage */
+            font-size: 16px; /* Taille de police */
+            cursor: pointer; /* Curseur pointer */
+            border-radius: 5px; /* Coins arrondis */
+        }
+        
+        /* Style de l'icône */
+        .scroll-btn i {
+            margin-left: 5px; /* Marge à gauche de l'icône */
+        }
     </style>
 </head>
 <body>
@@ -19,6 +36,26 @@
     
     <main>
         <div class="container">
+            <button class="scroll-btn" onclick="scrollToMap()">
+                Afficher la Map
+                <i class="fa-solid fa-map-location"></i>
+            </button>
+            <button class="scroll-btn" onclick="scrollToAgenda()">
+                Prendre un RDV
+                <i class="fa-solid fa-calendar-days"></i>
+            </button>
+
+            <script>
+                function scrollToMap() {
+                    var mapElement = document.getElementById('map');
+                    mapElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                function scrollToAgenda() {
+                    var agendaElement = document.getElementById('agenda');
+                    agendaElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
             <style type="text/css" media="screen">
   .container {
     margin: 10px auto;

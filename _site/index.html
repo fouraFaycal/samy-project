@@ -6,10 +6,27 @@
     <title>Samy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+
     <style>
         /* Add any custom CSS here */
-        body { margin: 0; padding: 0; }
+        body { margin: 10; padding: 10; }
         #map { height: 400px; }
+        /* Style du bouton */
+        .scroll-btn {
+            background-color: #4CAF50; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            border: none; /* Pas de bordure */
+            padding: 15px 20px; /* Remplissage */
+            font-size: 16px; /* Taille de police */
+            cursor: pointer; /* Curseur pointer */
+            border-radius: 5px; /* Coins arrondis */
+        }
+        
+        /* Style de l'icône */
+        .scroll-btn i {
+            margin-left: 5px; /* Marge à gauche de l'icône */
+        }
     </style>
 </head>
 <body>
@@ -19,6 +36,26 @@
     
     <main>
         <div class="container">
+            <button class="scroll-btn" onclick="scrollToMap()">
+                Afficher la Map
+                <i class="fa-solid fa-map-location"></i>
+            </button>
+            <button class="scroll-btn" onclick="scrollToAgenda()">
+                Prendre un RDV
+                <i class="fa-solid fa-calendar-days"></i>
+            </button>
+
+            <script>
+                function scrollToMap() {
+                    var mapElement = document.getElementById('map');
+                    mapElement.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                function scrollToAgenda() {
+                    var agendaElement = document.getElementById('agenda');
+                    agendaElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
             <h1 id="bienvenue-dans-le-monde-de-la-boxe-">Bienvenue dans le monde de la boxe !</h1>
 
 <p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
@@ -31,8 +68,140 @@
 
 <p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
 
-<iframe src="https://calendar.app.google/7MUpEq5TSRMfdTM69" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no">
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--1">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-1">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-1">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--2">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-2">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-2">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--3">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-3">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-3">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--4">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-4">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-4">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--5">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-5">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-5">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<iframe id="agenda" src="https://calendar.app.google/7MUpEq5TSRMfdTM69" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no">
 </iframe>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--6">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-6">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-6">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--7">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-7">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-7">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--8">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-8">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-8">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--9">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-9">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-9">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--10">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-10">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-10">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
+
+<h1 id="bienvenue-dans-le-monde-de-la-boxe--11">Bienvenue dans le monde de la boxe !</h1>
+
+<p>La boxe est un sport de combat qui implique deux adversaires qui se battent à l’aide de leurs poings. C’est un sport à la fois exigeant physiquement et mentalement, mais aussi gratifiant pour ceux qui le pratiquent.</p>
+
+<h2 id="les-bienfaits-de-la-boxe-11">Les bienfaits de la boxe</h2>
+
+<p>La boxe ne se limite pas seulement à l’aspect physique, elle offre également de nombreux bienfaits pour la santé mentale et émotionnelle. En plus d’améliorer la force, l’endurance et la coordination, la boxe peut aider à réduire le stress, à augmenter la confiance en soi et à favoriser la discipline et la maîtrise de soi.</p>
+
+<h2 id="pratiquer-la-boxe-11">Pratiquer la boxe</h2>
+
+<p>Que vous soyez débutant ou confirmé, il existe de nombreuses façons de pratiquer la boxe. Des cours de boxe traditionnels aux séances d’entraînement en groupe et aux programmes de conditionnement physique, il y a quelque chose pour tout le monde. Trouvez ce qui vous convient le mieux et plongez dans le monde passionnant de la boxe !</p>
 
 <div id="map" style="width: 50%; height: 400px;"></div>
 <script src="css/leaflet.js"></script>
