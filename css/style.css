@@ -7,22 +7,98 @@ body, h1, h2, p {
 /* Styles pour la page d'accueil */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Couleur de fond légère */
     color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em; /* Taille de police agrandie pour le titre principal */
     margin-bottom: 20px;
+    color: #333; /* Couleur du titre */
+    text-align: center; /* Centrage du titre */
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
+    font-size: 1.8em; /* Taille de police agrandie pour les sous-titres */
+    margin-top: 30px; /* Marge supérieure augmentée pour les sous-titres */
+    color: #555; /* Couleur légèrement plus foncée pour les sous-titres */
 }
 
 p {
     margin-bottom: 20px;
+    font-size: 1.2em; /* Taille de police légèrement agrandie pour le texte */
+    color: #666; /* Couleur de texte plus douce */
+}
+
+.container {
+    max-width: 800px; /* Largeur maximale du contenu pour un meilleur contrôle de la mise en page */
+    margin: 0 auto; /* Centrage horizontal du contenu */
+}
+
+.scroll-btn {
+    display: inline-block;
+    background-color: #ff6347; /* Couleur vive pour les boutons */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Remplissage du bouton */
+    font-size: 1.2em; /* Taille de police légèrement agrandie pour les boutons */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    border-radius: 5px; /* Coins arrondis pour les boutons */
+    transition: background-color 0.3s ease; /* Transition douce pour les changements de couleur de fond */
+}
+
+.scroll-btn:hover {
+    background-color: #ff4837; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Style pour la section d'information sur les bienfaits de l'arrêt du tabac */
+.info-section {
+    background-color: #fff; /* Fond blanc pour la section */
+    padding: 40px; /* Espacement intérieur accru pour la section */
+    border-radius: 10px; /* Coins arrondis pour la section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un aspect flottant */
+}
+
+.info-section h2 {
+    color: #333; /* Couleur de titre plus foncée */
+}
+
+.info-section p {
+    color: #555; /* Couleur de texte plus foncée */
+}
+
+/* Style pour les images */
+img {
+    max-width: 100%; /* Image adaptative pour s'adapter à la largeur du conteneur */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    display: block; /* Affichage en bloc pour gérer correctement l'espacement */
+    margin: 20px auto; /* Marge extérieure pour centrer les images */
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #333; /* Fond sombre pour le pied de page */
+    color: #fff; /* Couleur de texte en blanc */
+    text-align: center; /* Centrage du texte du pied de page */
+    padding: 20px 0; /* Espacement intérieur pour le pied de page */
+}
+
+/* Media query pour les petits écrans */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Taille de police réduite pour le titre principal sur les petits écrans */
+    }
+    
+    h2 {
+        font-size: 1.5em; /* Taille de police réduite pour les sous-titres sur les petits écrans */
+    }
+
+    p {
+        font-size: 1em; /* Taille de police réduite pour le texte sur les petits écrans */
+    }
+
+    .button {
+        font-size: 1em; /* Taille de police réduite pour les boutons sur les petits écrans */
+    }
 }
